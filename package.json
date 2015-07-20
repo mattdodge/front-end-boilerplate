@@ -6,23 +6,26 @@
     "browserify-shim": "^3.8.9",
     "gulp": "^3.9.0",
     "gulp-rename": "^1.2.2",
+    "gulp-sass": "^2.0.4",
     "gulp-sourcemaps": "^1.5.2",
     "vinyl-source-stream": "^1.1.0"
   },
   "browser": {
-	  "jquery": "./bower_components/jquery/dist/jquery.min.js",
-	  "underscore": "./bower_components/underscore/underscore-min.js",
-	  "bootstrap": "./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"
+    "jquery": "./bower_components/jquery/dist/jquery.min.js",
+    "underscore": "./bower_components/underscore/underscore-min.js",
+    "bootstrap": "./bower_components/bootstrap-sass/assets/javascripts/bootstrap.min.js"
   },
   "browserify-shim": {
-	  "jquery": {
-		  "exports": "$"
-	  },
-	  "underscore": {
-		  "exports": "_"
-	  },
-	  "bootstrap": {
-		  "depends": [ "jquery:$" ]
-	  }
+    "jquery": {
+      "exports": "$"
+    },
+    "underscore": {
+      "exports": "_"
+    },
+    "bootstrap": {
+      "depends": [
+        "jquery:$"
+      ]
+    }
   }
 }
