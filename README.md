@@ -33,3 +33,7 @@ Make your SASS/SCSS changes in the sass folder. Gulp will build from the `sass/s
 ### JS
 
 Make your JavaScript changes in the js folder. Gulp will build from the `js/main.js` file and you can use browserify to `require` other JS files. The resulting JS file will be placed in `build/script.js` and will contain the bootstrap JavaScript by default.
+
+### Bringing it all together
+
+Just run `gulp` (or `gulp watch` to watch for changes) to make the builds happen. The `index.html` file already includes the JS and CSS by default.
